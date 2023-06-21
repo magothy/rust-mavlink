@@ -50,6 +50,7 @@ serde_arrays = { version = "0.1.0", optional = true }
     "uavionix",
     "avssuas",
     "cubepilot",
+    "magothy",
 ]
 "ardupilotmega" = ["common", "icarous", "uavionix"]
 "asluav" = ["common"]
@@ -67,6 +68,7 @@ serde_arrays = { version = "0.1.0", optional = true }
 "icarous" = []
 "common" = []
 "cubepilot" = ["common"]
+"magothy" = ["common"]
 
 "all-dialects" = [
     "ardupilotmega",
@@ -85,6 +87,7 @@ serde_arrays = { version = "0.1.0", optional = true }
     "icarous",
     "common",
     "cubepilot",
+    "magothy",
 ]
 
 "format-generated-code" = []
@@ -96,7 +99,7 @@ serde_arrays = { version = "0.1.0", optional = true }
 "direct-serial" = []
 "embedded" = ["embedded-hal", "nb"]
 "serde" = ["dep:serde", "dep:serde_arrays"]
-default = ["std", "tcp", "udp", "direct-serial", "serial", "serde", "ardupilotmega"]
+default = ["std", "tcp", "udp", "direct-serial", "serial", "serde", "magothy"]
 
 # build with all features on docs.rs so that users viewing documentation
 # can see everything
